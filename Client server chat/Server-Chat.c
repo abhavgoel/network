@@ -26,7 +26,7 @@ int main(int argc,char**argv)
          fgets(buffer,4096,stdin);
          write(newsockfd,buffer,4096);
          printf("\n");
-         read(newsockfd,buffer,4096);
+         read(newsockfd,buffer,4096);//client ka msg padhne ke lie
        }
        close(sockfd);
        return 0;

@@ -23,7 +23,7 @@ int main()
         bzero(sendline,4096);
         bzero(recvline,4096);
         fgets(sendline,4096,stdin);
-        send(sockid,sendline,strlen(sendline),0);
+        send(sockid,sendline,4096,0);
         recv(sockid,recvline,4096,0);
         printf("%s",recvline);
     }
